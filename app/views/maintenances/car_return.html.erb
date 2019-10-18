@@ -12,7 +12,5 @@
   <dt class="col-sm-3">Valor</dt>
   <dd class="col-sm-9"><%= number_to_currency @maintenance.service_cost %></dd>
 
-  <% if @car.available? %>
-    <dd class="col-sm-9">Status: Disponível</dd>
-  <% end %>
+  <%= car_status %>
 </dl>
